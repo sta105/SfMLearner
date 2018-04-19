@@ -9,6 +9,8 @@ from data_loader import DataLoader
 from nets import *
 from utils import *
 
+
+
 class SfMLearner(object):
     def __init__(self):
         pass

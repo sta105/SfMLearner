@@ -25,6 +25,8 @@ flags.DEFINE_integer("save_latest_freq", 5000, \
 flags.DEFINE_boolean("continue_train", False, "Continue training from previous checkpoint")
 FLAGS = flags.FLAGS
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
 def main(_):
     seed = 8964
     tf.set_random_seed(seed)
